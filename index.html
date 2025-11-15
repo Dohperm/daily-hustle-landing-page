@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Hustle — Micro Earning Platform</title>
+    <meta
+      name="description"
+      content="Earn from micro-jobs, cashback and bounties. Advertise and get real results."
+    />
+    <link rel="shortcut icon" href="/dailyjhustleimage.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="/dailyjhustleimage.png" alt="Logo" height="38" />
+          <span class="fw-bold fs-3 brand">Daily Hustle</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5 gap-2">
+            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#campaigns" class="nav-link">Campaigns</a>
+            </li>
+            <li class="nav-item">
+              <a href="#plans" class="nav-link">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                href="https://daily-hustle-worker-frontend.vercel.app"
+                class="btn cta-big-1 rounded-pill"
+                target="_blank"
+                >Start Earning
+              </a>
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                href="https://daily-hustle-advertiser-frontend.vercel.app/"
+                class="btn cta-big-2 rounded-pill"
+                target="_blank"
+                >Post Campaigns</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="soft-bg">
+      <div class="container fadein">
+        <div class="row align-items-center flex-lg-row flex-column-reverse">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-title fw-black mb-3 lh-1">
+              Earn: <span class="hero-title-dyn" id="hero-dyn">Jobs</span>
+            </h1>
+            <p class="lead fs-3 mb-4 section-lead">
+              Complete micro-jobs for brands or activate cashback before
+              shopping.
+              <br />Verified. Real. Instant earning.
+            </p>
+            <div
+              class="mb-5 d-flex flex-wrap justify-content-center justify-content-lg-start gap-3"
+            >
+              <a
+                href="https://daily-hustle-worker-frontend.vercel.app"
+                class="btn btn-brand cta-big fw-bold shadow-sm"
+              >
+                <i class="bi bi-person-video3 me-2"></i>Become a Worker
+              </a>
+              <a
+                href="https://daily-hustle-advertiser-frontend.vercel.app/"
+                class="btn btn-outline-brand cta-big fw-bold shadow-sm"
+              >
+                <i class="bi bi-megaphone me-2"></i>Become an Advertiser
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center mb-4 mb-lg-0">
+            <div class="hero-parallax"></div>
+            <img
+              src="/hero.png"
+              alt="Team Collaboration"
+              class="img-fluid"
+              style="
+                max-width: 97%;
+                border-radius: 1.25em;
+                box-shadow: 0 8px 44px #ff450019;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section subtle-bg bshadow">
+      <br /><br /><br />
+      <div class="container fadein">
+        <h2 class="section-title text-center brand mb-2">How It Works</h2>
+        <p class="section-lead text-center mb-4">
+          Get paid for micro-jobs, earn cashback, unlock bounties. Simple.<br />Proof
+          + approval = instant money.
+        </p>
+        <div class="row text-center g-4 mt-4">
+          <div class="col-md-4 col-12">
+            <div class="feature card p-2 pt-5 pb-5 h-100 fadein">
+              <i class="bi bi-list-task mb-3"></i>
+              <h5 class="fw-bold brand">Find Jobs</h5>
+              <div>
+                Browse and pick a task, bounty or deal. All step-by-step.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="feature card p-2 pt-5 pb-5 h-100 fadein">
+              <i class="bi bi-patch-check mb-3"></i>
+              <h5 class="fw-bold brand">Submit. Verify. Earn.</h5>
+              <div>
+                Your work gets checked fast. Accept, reject, resubmit—zero
+                stories.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="feature card p-2 pt-5 pb-5 h-100 fadein">
+              <i class="bi bi-cash-stack mb-3"></i>
+              <h5 class="fw-bold brand">Payouts Every Friday</h5>
+              <div>
+                Your wallet credits immediately. Withdraw to bank or reinvest.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+    </section>
+
+    <section id="stats" class="section bg-white bshadow">
+      <div class="container fadein">
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="stat-card h-100">
+              <i class="bi bi-people-fill stat-icon"></i>
+              <h3
+                class="stat-number"
+                data-target-num="15000"
+                data-target-text="15,000+"
+              >
+                0
+              </h3>
+              <div class="stat-label">Active Users</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card h-100">
+              <i class="bi bi-patch-check-fill stat-icon"></i>
+              <h3
+                class="stat-number"
+                data-target-num="210000"
+                data-target-text="210,000+"
+              >
+                0
+              </h3>
+              <div class="stat-label">Approved Tasks</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card h-100">
+              <i class="bi bi-cash-stack stat-icon"></i>
+              <h3
+                class="stat-number"
+                data-target-num="8500000"
+                data-target-text="₦8,500,000+"
+              >
+                0
+              </h3>
+              <div class="stat-label">Total Payouts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="campaigns" class="section bg-white bshadow">
+      <div class="container fadein">
+        <h2 class="section-title brand text-center mb-2">
+          Featured Campaign Types
+        </h2>
+        <p class="section-lead text-center mb-4">
+          See all the ways to earn—and promote.
+        </p>
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4">
+            <h4 class="fc-group-title mb-3">
+              <i class="bi bi-lightning-charge brand me-2"></i>Engagement &
+              Social
+            </h4>
+            <div class="fc-list">
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Instagram"
+                data-desc="Follow, like, or share brand posts."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-instagram mb-2"></i>
+                <div class="fc-label">Instagram</div>
+                <div class="fc-desc">Follow, like, or share</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Facebook"
+                data-desc="Like, comment or join groups for campaigns."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-facebook mb-2"></i>
+                <div class="fc-label">Facebook</div>
+                <div class="fc-desc">Like, join, comment</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Twitter [X]"
+                data-desc="Retweet and follow campaigns."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-twitter mb-2"></i>
+                <div class="fc-label">Twitter [X]</div>
+                <div class="fc-desc">Follow, retweet, vote</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Tiktok"
+                data-desc="Like, comment, duet brand content."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-tiktok mb-2"></i>
+                <div class="fc-label">Tiktok</div>
+                <div class="fc-desc">Video, like, duet</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Snapchat"
+                data-desc="Add, view and promote stories."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-snapchat mb-2"></i>
+                <div class="fc-label">Snapchat</div>
+                <div class="fc-desc">Add, promote stories</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Threads"
+                data-desc="Join thread discussions, share content."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-at mb-2"></i>
+                <div class="fc-label">Threads</div>
+                <div class="fc-desc">Join, share, discuss</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Whatsapp"
+                data-desc="Join groups, forward offers, status updates."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-whatsapp mb-2"></i>
+                <div class="fc-label">Whatsapp</div>
+                <div class="fc-desc">Join, broadcast, share</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Telegram"
+                data-desc="Join, vote and participate in channel polls."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-telegram mb-2"></i>
+                <div class="fc-label">Telegram</div>
+                <div class="fc-desc">Join, participate, poll</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Discord"
+                data-desc="Join and engage with servers, new friend requests."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-discord mb-2"></i>
+                <div class="fc-label">Discord</div>
+                <div class="fc-desc">Engage, join server</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="LinkedIn"
+                data-desc="Connect, endorse, recommend or join groups."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-linkedin mb-2"></i>
+                <div class="fc-label">LinkedIn</div>
+                <div class="fc-desc">Connect, endorse</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h4 class="fc-group-title mb-3">
+              <i class="bi bi-cash-stack brand me-2"></i>Monetized Tasks
+            </h4>
+            <div class="fc-list">
+              <div
+                class="fc-card p-4 fadein"
+                data-name="App Download"
+                data-desc="Download, sign up or refer apps."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-phone mb-2"></i>
+                <div class="fc-label">App Download</div>
+                <div class="fc-desc">Download, signup</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Survey"
+                data-desc="Fill surveys, earn per completion."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-ui-checks mb-2"></i>
+                <div class="fc-label">Survey</div>
+                <div class="fc-desc">Answer, complete, earn</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="UGC"
+                data-desc="Submit video/content and get rewarded."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-file-earmark-person mb-2"></i>
+                <div class="fc-label">UGC</div>
+                <div class="fc-desc">Video, content, get paid</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Content Reward"
+                data-desc="Create posts, reviews, or testimonials."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-file-earmark-text mb-2"></i>
+                <div class="fc-label">Content Reward</div>
+                <div class="fc-desc">Post, review, write</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Sign Up"
+                data-desc="Join apps, get rewarded, refer friends."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-person-plus mb-2"></i>
+                <div class="fc-label">Sign Up</div>
+                <div class="fc-desc">Join app, refer</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Artist Engagement"
+                data-desc="Play, like, share artist media."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-music-note-list mb-2"></i>
+                <div class="fc-label">Artist Engagement</div>
+                <div class="fc-desc">Play, like, share</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Review"
+                data-desc="App/product store reviews, video testimonials."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-star mb-2"></i>
+                <div class="fc-label">Review</div>
+                <div class="fc-desc">Write, record</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Video Watch Time"
+                data-desc="Watch, like, and share videos for time/reward."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-camera-video mb-2"></i>
+                <div class="fc-label">Video Watch Time</div>
+                <div class="fc-desc">Watch, share, earn</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Affiliate Reward"
+                data-desc="Refer brands/jobs to unlock payouts."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-award mb-2"></i>
+                <div class="fc-label">Affiliate Reward</div>
+                <div class="fc-desc">Refer, share, reward</div>
+              </div>
+              <div
+                class="fc-card p-4 fadein"
+                data-name="Website"
+                data-desc="Visit or review websites for quick cash."
+                onclick="openFC(this)"
+              >
+                <i class="bi bi-globe2 mb-2"></i>
+                <div class="fc-label">Website</div>
+                <div class="fc-desc">Visit, review, earn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="fcModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title fw-bold" id="fcModalTitle"></h5>
+              <button
+                type="button"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body fs-4" id="fcModalBody"></div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn btn-outline-brand rounded-pill"
+                data-bs-dismiss="modal"
+              >
+                <i class="bi bi-x me-2"></i>Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section bg-white bshadow">
+      <div class="container fadein">
+        <h2 class="section-title text-center brand mb-3">Our Plans</h2>
+
+        <div class="row justify-content-center d-flex pt-5 pb-5 p-2">
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge plans-color-badge">FREE</span>
+                </div>
+                <h5 class="card-title fw-bold">BASIC</h5>
+                <h4 class="fw-bold plans-color mb-3">₦0/mo</h4>
+                <ul class="list-unstyled text-start mb-4 flex-grow-1">
+                  <li class="mb-2 text-center">
+                    Post up to 2 campaigns/month"
+                  </li>
+                  <li class="mb-2 text-center">Standard campaign support</li>
+                  <li class="mb-2 text-center">Basic analytics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-md card-plan-popular">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge plans-color-badge">Most Popular</span>
+                </div>
+                <h5 class="card-title fw-bold">Pro</h5>
+                <h4 class="fw-bold plans-color mb-3">₦5,000/mo</h4>
+                <ul
+                  class="list-unstyled card-plan-popular-text text-start mb-4 flex-grow-1"
+                >
+                  <li class="mb-2 text-center">Unlimited campaigns</li>
+                  <li class="mb-2 text-center">Priority campaign approval</li>
+                  <li class="mb-2 text-center">Access premium analytics</li>
+                  <li class="mb-2 text-center">5% ad credit bonus</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge plans-color-badge">Business</span>
+                </div>
+                <h5 class="card-title fw-bold">Enterprise</h5>
+                <h4 class="fw-bold plans-color mb-3">₦20,000/mo</h4>
+                <ul class="list-unstyled text-start mb-4 flex-grow-1">
+                  <li class="mb-2 text-center">Unlimited everything</li>
+                  <li class="mb-2 text-center">Dedicated account manager</li>
+                  <li class="mb-2 text-center">Custom integrations</li>
+                  <li class="mb-2 text-center">API access</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section soft-bg">
+      <br /><br /><br />
+      <div class="container fadein">
+        <h2 class="section-title text-center brand mb-3">Frequently Asked</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="accordion" id="styledFaq">
+              <div class="faq-card mb-3">
+                <div class="faq-q p-3" data-bs-toggle="collapse" href="#fq1">
+                  <i class="bi bi-lightning me-2"></i>How fast do I get paid?
+                </div>
+                <div id="fq1" class="collapse show p-3 text-secondary">
+                  Withdrawals are processed every Friday. All jobs/payments are
+                  verified—no stories, just payouts.
+                </div>
+              </div>
+              <div class="faq-card mb-3">
+                <div class="faq-q p-3" data-bs-toggle="collapse" href="#fq2">
+                  <i class="bi bi-star me-2"></i>Who can join Daily Hustle?
+                </div>
+                <div id="fq2" class="collapse p-3 text-secondary">
+                  Anyone in Nigeria! No special skills, fancy phones, or big
+                  following needed. Just sign up and earn.
+                </div>
+              </div>
+              <div class="faq-card mb-3">
+                <div class="faq-q p-3" data-bs-toggle="collapse" href="#fq3">
+                  <i class="bi bi-shield-check me-2"></i>Are the jobs and
+                  payments real?
+                </div>
+                <div id="fq3" class="collapse p-3 text-secondary">
+                  Absolutely. Every task is approved before payout. And we kick
+                  out any fake jobs or scammers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+
+    <section id="testimonials" class="section bg-light">
+      <br /><br /><br />
+      <div class="container fadein pt-5 pb-5 p-2">
+        <h2 class="section-title text-center brand mb-3">
+          What Our Clients Say
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="plans-color card p-4 h-100 shadow-sm border-0 text-center"
+            >
+              <h5 class="fw-bold fs-3">John Bolaji</h5>
+              <small class="text-muted plans-color">WORKER</small>
+              <p class="fst-italic mt-3">
+                "Daily Hustle transformed my Finances"
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="plans-color card p-4 h-100 shadow-sm border-0 text-center"
+            >
+              <h5 class="fw-bold fs-3">Michael Olise</h5>
+              <small class="text-muted plans-color">ADVERTISER</small>
+              <p class="fst-italic mt-3">
+                "The Best platform for Campaigns"
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="plans-color card p-4 h-100 shadow-sm border-0 text-center"
+            >
+              <h5 class="fw-bold fs-3">Chukwuka Janet</h5>
+              <small class="text-muted plans-color">WORKER</small>
+              <p class="fst-italic mt-3">"Fastest Paying Platform"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-white">
+      <div class="container fadein">
+        <h2 class="section-title text-center brand mb-4">Contact Us</h2>
+        <div class="row g-4 align-items-center justify-content-center">
+          <div class="col-lg-5">
+            <div class="contact-card h-100 p-4 p-lg-5 text-center">
+                <i class="bi bi-envelope-fill display-3 brand mb-3"></i>
+              <h4 class="contact-label mb-2">Get in Touch</h4>
+              <p class="office-loc mb-4">
+                Have questions or need support? Send us an email. We're here to
+                help!
+              </p>
+              <div class="mb-2">
+                <span class="contact-label fs-5"
+                  ><i class="bi bi-envelope me-1"></i>Email:</span
+                >
+                <br />
+                <a
+                  href="mailto:info@dailyhustle.fun"
+                  class="fw-bold text-dark fs-5"
+                  >info@dailyhustle.fun</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-card h-100 p-4 p-lg-5">
+              <h4 class="fw-bold text-center text-lg-start mb-3">Send Us a Message</h4>
+              <div class="mb-3">
+                <input
+                  class="form-control rounded-pill"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control rounded-pill"
+                  type="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  rows="4"
+                  class="form-control rounded-4"
+                  placeholder="Your Message..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-brand w-100 rounded-pill fw-semibold"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 footer-col">
+            <a
+              class="navbar-brand d-flex align-items-center gap-2 mb-3"
+              href="#"
+            >
+              <img src="/dailyjhustleimage.png" style="background-color: white;border-radius:25%;" alt="Logo" height="38" />
+              <span class="fw-bold fs-3 brand">Daily Hustle</span>
+            </a>
+            <p class="footer-brand-text">
+              Built by professionals, for professionals. Earn from micro-jobs,
+              cashback, and bounties.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 footer-col">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#hero" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#campaigns" class="nav-link">Campaigns</a>
+              </li>
+              <li class="nav-item">
+                <a href="#plans" class="nav-link">Plans</a>
+              </li>
+              <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 footer-col">
+            <h5>Legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Advertiser Agreement</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 footer-col">
+            <h5>Get in Touch</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="mailto:info@dailyhustle.fun" class="nav-link"
+                  ><i class="bi bi-envelope-fill"></i> info@dailyhustle.fun</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sub-footer mt-4">
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between align-items-center"
+          >
+            <div class="text-center text-sm-start">
+              &copy; <span id="year"></span> Daily Hustle. All Rights Reserved.
+            </div>
+            <div class="social-links mt-3 mt-sm-0">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      id="scrollTopBtn"
+      href="#hero"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

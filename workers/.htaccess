@@ -1,0 +1,62 @@
+########## ROOT DOMAIN (public_html/.htaccess) ##########
+
+RewriteEngine On
+
+# --- Force HTTPS ---
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- Redirect www to non-www ---
+RewriteCond %{HTTP_HOST} ^www\.dailyhustle\.fun [NC]
+RewriteRule ^(.*)$ https://dailyhustle.fun/$1 [L,R=301]
+
+# --- Redirect /advertisers/* to advertisers subdomain ---
+RewriteCond %{REQUEST_URI} ^/advertisers(?:/(.*))?$
+RewriteRule ^advertisers(?:/(.*))?$ https://advertisers.dailyhustle.fun/$1 [R=301,L]
+
+# --- Redirect /workers/* to workers subdomain ---
+RewriteCond %{REQUEST_URI} ^/workers(?:/(.*))?$
+RewriteRule ^workers(?:/(.*))?$ https://workers.dailyhustle.fun/$1 [R=301,L]
+
+# --- Redirect /admins/* to admins subdomain ---
+RewriteCond %{REQUEST_URI} ^/admins(?:/(.*))?$
+RewriteRule ^admins(?:/(.*))?$ https://admins.dailyhustle.fun/$1 [R=301,L]
+
+# --- SPA Routing for React Router (main app, root) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+
+
+########## ADVERTISERS SUBDOMAIN (public_html/advertisers/.htaccess) ##########
+
+RewriteEngine On
+
+# --- SPA Routing for React Router (advertisers subdomain) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.html [L]
+
+
+
+########## WORKERS SUBDOMAIN (public_html/workers/.htaccess) ##########
+
+RewriteEngine On
+
+# --- SPA Routing for React Router (workers subdomain) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.html [L]
+
+
+
+########## ADMINS SUBDOMAIN (public_html/admins/.htaccess) ##########
+
+RewriteEngine On
+
+# --- SPA Routing for React Router (admins subdomain) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.html [L]
+
